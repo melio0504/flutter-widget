@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Teodoro | Lab 3'),
+      home: const MyHomePage(title: 'Flutter Advanced Widget'),
     );
   }
 }
@@ -30,7 +30,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
 
   final List<String> subjects = [
     "Programming",
@@ -39,12 +38,6 @@ class _MyHomePageState extends State<MyHomePage> {
     "Web Development",
     "Mobile Development"
   ];
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -62,11 +55,6 @@ class _MyHomePageState extends State<MyHomePage> {
             stackExample(),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }
