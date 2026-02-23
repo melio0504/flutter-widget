@@ -1,16 +1,65 @@
-# lab_3_with_provided_code
+# Flutter Advanced Widget Demo
 
-A new Flutter project.
+Simple Flutter app that demonstrates common layout and UI widgets in one scrollable screen.
+
+![Screenshot](screenshot.png)
+
+## Overview
+
+This project is a lab-style Flutter app showcasing how to compose multiple widget types in a single page using Material 3.
+
+The home screen (`Flutter Advanced Widget`) includes:
+
+- **Container example** with margin, padding, background color, and rounded corners
+- **ListView.builder example** rendering a list of subjects
+- **GridView.builder example** rendering a 2-column grid of items
+- **Stack example** showing layered widgets with positioned text
+
+## Tech Stack
+
+- **Flutter** (Material 3)
+- **Dart** SDK `^3.10.7`
+
+## Project Structure
+
+```text
+lib/
+	main.dart          # App entry point and widget examples
+test/
+	widget_test.dart   # Default Flutter widget test template
+```
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK installed
+- A configured device/emulator (Android/iOS) or desktop target
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Check your setup:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter doctor
+```
+
+### Install dependencies
+
+```bash
+flutter pub get
+```
+
+### Run the app
+
+```bash
+flutter run
+```
+
+## Useful Commands
+
+```bash
+# Analyze code
+flutter analyze
+
+# Run tests
+flutter test
+```
